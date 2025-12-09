@@ -1,0 +1,88 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+article {
+  color: black;
+}
+
+/* Contact Information section */
+.contactInfo {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Contact Form section */
+.contactForm {
+  margin: 20px;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.contactInfo > h2, .contactForm > h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: lightskyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightskyblue;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px){
+  article{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactInfo > h2, .contactForm > h2 {
+    font-size: 1.5em;
+  }
+
+  .contactInfo > p, .contactForm > label {
+    font-size: 1em;
+  }
+
+  input, textarea {
+    font-size: 0.9em;
+  }
+}

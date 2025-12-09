@@ -1,0 +1,127 @@
+/* Main content container */
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+/* Section styles */
+.project {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 20px;
+  border: 4px solid darkgreen;
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.projectPhotos {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  margin: auto;
+  box-sizing: border-box;
+  border: 4px solid darkgreen;
+}
+
+.projectImage {
+  width: 95%;
+  margin: 10px;
+}
+
+.projectTop {
+  flex: 1;
+}
+
+.projectSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.creditsImage {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+.projectTitleImage {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#githubLink {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1650px) {
+  .project {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project h2 {
+    font-size: 1.5em;
+  }
+
+  .projectPhotos {
+    width: 95%;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 760px) {
+  article {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .projectDescription {
+    font-size: 0.7em;
+  }
+
+  .projectPhotos {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .projectTitleImage {
+    width: 100%;
+  }
+
+  .creditsImage {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
